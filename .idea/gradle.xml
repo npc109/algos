@@ -10,6 +10,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/population-next-right-pointers-in-node" />
             <option value="$PROJECT_DIR$/serialize-binary-tree" />
             <option value="$PROJECT_DIR$/word-ladder" />
           </set>
