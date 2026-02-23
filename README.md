@@ -26,6 +26,13 @@ algos/
 │   ├── src/test/java/.../rp/
 │   │   └── SolutionTest.java
 │   └── build.gradle.kts
+├── pair-nodes-swap/                    # Попарная перестановка узлов связного списка
+│   ├── src/main/java/.../pns/
+│   │   ├── ListNode.java
+│   │   └── Solution.java
+│   ├── src/test/java/.../pns/
+│   │   └── SolutionTest.java
+│   └── build.gradle.kts
 ├── build.gradle.kts                    # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                 # Настройки проекта
 └── gradlew                             # Gradle wrapper
@@ -82,6 +89,7 @@ void solveCheck0() {
   - `by.semenyukna.wl` — Word Ladder
   - `by.semenyukna.sbt` — Serialize Binary Tree
   - `by.semenyukna.rp` — Population Next Right Pointers
+  - `by.semenyukna.pns` — Pair Nodes Swap
 
    
 ## 🔗 Лицензия
