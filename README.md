@@ -33,6 +33,12 @@ algos/
 │   ├── src/test/java/.../pns/
 │   │   └── SolutionTest.java
 │   └── build.gradle.kts
+├── next-permutation/                   # Следующая лексикографическая перестановка
+│   ├── src/main/java/.../np/
+│   │   └── Solution.java
+│   ├── src/test/java/.../np/
+│   │   └── SolutionTest.java
+│   └── build.gradle.kts
 ├── build.gradle.kts                    # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                 # Настройки проекта
 └── gradlew                             # Gradle wrapper
@@ -90,6 +96,7 @@ void solveCheck0() {
   - `by.semenyukna.sbt` — Serialize Binary Tree
   - `by.semenyukna.rp` — Population Next Right Pointers
   - `by.semenyukna.pns` — Pair Nodes Swap
+  - `by.semenyukna.np` — Next Permutation
 
    
 ## 🔗 Лицензия
