@@ -51,6 +51,12 @@ algos/
 │   ├── src/test/java/.../rd/
 │   │   └── SolutionTest.java
 │   └── build.gradle.kts
+├── longest-consecutive-sequence/       # Поиск самой длинной последовательности чисел
+│   ├── src/main/java/.../lcs/
+│   │   └── Solution.java
+│   ├── src/test/java/.../lcs/
+│   │   └── SolutionTest.java
+│   └── build.gradle.kts
 ├── build.gradle.kts                    # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                 # Настройки проекта
 └── gradlew                             # Gradle wrapper
@@ -111,4 +117,5 @@ void solveCheck0() {
   - `by.semenyukna.np` — Next Permutation
   - `by.semenyukna.pp` — Previous Permutation
   - `by.semenyukna.rd` — Remove Duplicates From Sorted Array 2
+  - `by.semenyukna.lcs` — Longest Consecutive Sequence
 
