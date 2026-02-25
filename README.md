@@ -45,6 +45,12 @@ algos/
 │   ├── src/test/java/.../pp/
 │   │   └── SolutionTest.java
 │   └── build.gradle.kts
+├── remove-duplicates-from-sorted-array2/ # Удаление дубликатов с максимум 2 вхождениями
+│   ├── src/main/java/.../rd/
+│   │   └── Solution.java
+│   ├── src/test/java/.../rd/
+│   │   └── SolutionTest.java
+│   └── build.gradle.kts
 ├── build.gradle.kts                    # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                 # Настройки проекта
 └── gradlew                             # Gradle wrapper
@@ -104,4 +110,5 @@ void solveCheck0() {
   - `by.semenyukna.pns` — Pair Nodes Swap
   - `by.semenyukna.np` — Next Permutation
   - `by.semenyukna.pp` — Previous Permutation
+  - `by.semenyukna.rd` — Remove Duplicates From Sorted Array 2
 
