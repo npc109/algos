@@ -57,6 +57,12 @@ algos/
 │   ├── src/test/java/.../lcs/
 │   │   └── SolutionTest.java
 │   └── build.gradle.kts
+├── coin-change/                        # Размен монет: минимальное количество монет (BFS, не оптимально)
+│   ├── src/main/java/.../cc/
+│   │   └── Solution.java
+│   ├── src/test/java/.../cc/
+│   │   └── SolutionTest.java
+│   └── build.gradle.kts
 ├── build.gradle.kts                    # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                 # Настройки проекта
 └── gradlew                             # Gradle wrapper
@@ -118,4 +124,5 @@ void solveCheck0() {
   - `by.semenyukna.pp` — Previous Permutation
   - `by.semenyukna.rd` — Remove Duplicates From Sorted Array 2
   - `by.semenyukna.lcs` — Longest Consecutive Sequence
+  - `by.semenyukna.cc` — Coin Change (BFS, не оптимально)
 
