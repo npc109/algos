@@ -63,6 +63,12 @@ algos/
 │   ├── src/test/java/.../cc/
 │   │   └── SolutionTest.java
 │   └── build.gradle.kts
+├── container-with-most-water/          # Контейнер с максимальной площадью (two pointers)
+│   ├── src/main/java/.../cwmw/
+│   │   └── Solution.java
+│   ├── src/test/java/.../cwmw/
+│   │   └── SolutionTest.java
+│   └── build.gradle.kts
 ├── build.gradle.kts                    # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                 # Настройки проекта
 └── gradlew                             # Gradle wrapper
@@ -125,4 +131,5 @@ void solveCheck0() {
   - `by.semenyukna.rd` — Remove Duplicates From Sorted Array 2
   - `by.semenyukna.lcs` — Longest Consecutive Sequence
   - `by.semenyukna.cc` — Coin Change (BFS, не оптимально)
+  - `by.semenyukna.cwmw` — Container With Most Water
 

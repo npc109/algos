@@ -11,6 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/coin-change" />
+            <option value="$PROJECT_DIR$/container-with-most-water" />
             <option value="$PROJECT_DIR$/longest-consecutive-sequence" />
             <option value="$PROJECT_DIR$/next-permutation" />
             <option value="$PROJECT_DIR$/pair-nodes-swap" />
