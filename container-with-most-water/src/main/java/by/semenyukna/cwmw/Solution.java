@@ -4,6 +4,7 @@ public class Solution {
 
   public int maxArea(int[] height) {
     var l = 0;
+    int[] x = {1,2};
     var r = height.length - 1;
     var max = 0;
     while (l < r) {

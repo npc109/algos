@@ -69,6 +69,20 @@ algos/
 │   ├── src/test/java/.../cwmw/
 │   │   └── SolutionTest.java
 │   └── build.gradle.kts
+├── reverse-linked-list/                # Разворот связного списка (итеративно)
+│   ├── src/main/java/.../rll/
+│   │   ├── ListNode.java
+│   │   └── Solution.java
+│   ├── src/test/java/.../rll/
+│   │   └── SolutionTest.java
+│   └── build.gradle.kts
+├── reorder-list/                       # Перестройка связного списка (L0→Ln→L1→Ln+1...)
+│   ├── src/main/java/.../rl/
+│   │   ├── ListNode.java
+│   │   └── Solution.java
+│   ├── src/test/java/.../rl/
+│   │   └── SolutionTest.java
+│   └── build.gradle.kts
 ├── build.gradle.kts                    # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                 # Настройки проекта
 └── gradlew                             # Gradle wrapper
@@ -132,4 +146,6 @@ void solveCheck0() {
   - `by.semenyukna.lcs` — Longest Consecutive Sequence
   - `by.semenyukna.cc` — Coin Change (BFS, не оптимально)
   - `by.semenyukna.cwmw` — Container With Most Water
+  - `by.semenyukna.rll` — Reverse Linked List
+  - `by.semenyukna.rl` — Reorder List
 
