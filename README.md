@@ -83,6 +83,13 @@ algos/
 │   ├── src/test/java/.../rl/
 │   │   └── SolutionTest.java
 │   └── build.gradle.kts
+├── clone-graph/                        # Клонирование неориентированного графа (DFS + HashMap)
+│   ├── src/main/java/.../cg/
+│   │   ├── Node.java
+│   │   └── Solution.java
+│   ├── src/test/java/.../cg/
+│   │   └── SolutionTest.java
+│   └── build.gradle.kts
 ├── build.gradle.kts                    # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                 # Настройки проекта
 └── gradlew                             # Gradle wrapper
@@ -148,4 +155,5 @@ void solveCheck0() {
   - `by.semenyukna.cwmw` — Container With Most Water
   - `by.semenyukna.rll` — Reverse Linked List
   - `by.semenyukna.rl` — Reorder List
+  - `by.semenyukna.cg` — Clone Graph
 
