@@ -90,6 +90,13 @@ algos/
 │   ├── src/test/java/.../cg/
 │   │   └── SolutionTest.java
 │   └── build.gradle.kts
+├── add-two-numbers/                    # Сумма двух чисел (связные списки)
+│   ├── src/main/java/.../atn/
+│   │   ├── ListNode.java
+│   │   └── Solution.java
+│   ├── src/test/java/.../atn/
+│   │   └── SolutionTest.java
+│   └── build.gradle.kts
 ├── build.gradle.kts                    # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                 # Настройки проекта
 └── gradlew                             # Gradle wrapper
@@ -156,4 +163,5 @@ void solveCheck0() {
   - `by.semenyukna.rll` — Reverse Linked List
   - `by.semenyukna.rl` — Reorder List
   - `by.semenyukna.cg` — Clone Graph
+  - `by.semenyukna.atn` — Add Two Numbers
 
