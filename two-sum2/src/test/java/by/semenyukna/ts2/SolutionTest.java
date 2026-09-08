@@ -1,5 +1,6 @@
-package by.semenyukna.lawrn;
+package by.semenyukna.ts2;
 
+import by.semenyukna.ts2.Solution;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
