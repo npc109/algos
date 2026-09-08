@@ -109,6 +109,12 @@ algos/
 │   ├── src/test/java/.../ts2/
 │   │   └── SolutionTest.java
 │   └── build.gradle.kts
+├── find-minimum-in-rotated-sorted-array/ # Поиск минимума в повёрнутом массиве (Binary Search)
+│   ├── src/main/java/.../fmrsa/
+│   │   └── Solution.java
+│   ├── src/test/java/.../fmrsa/
+│   │   └── SolutionTest.java
+│   └── build.gradle.kts
 ├── build.gradle.kts                    # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                 # Настройки проекта
 └── gradlew                             # Gradle wrapper
@@ -176,6 +182,7 @@ void solveCheck0() {
   - `by.semenyukna.rl` — Reorder List
   - `by.semenyukna.cg` — Clone Graph
   - `by.semenyukna.atn` — Add Two Numbers
+  - `by.semenyukna.ts2` — Two Sum II
   - `by.semenyukna.lawrn` — Longest Array Without Repeating Number
-  - `by.semenyukna.lawrn` — Two Sum II
+  - `by.semenyukna.fmrsa` — Find Minimum in Rotated Sorted Array
 
