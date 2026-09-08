@@ -177,5 +177,5 @@ void solveCheck0() {
   - `by.semenyukna.cg` — Clone Graph
   - `by.semenyukna.atn` — Add Two Numbers
   - `by.semenyukna.lawrn` — Longest Array Without Repeating Number
-  - `by.semenyukna.ts2` — Two Sum II
+  - `by.semenyukna.lawrn` — Two Sum II
 

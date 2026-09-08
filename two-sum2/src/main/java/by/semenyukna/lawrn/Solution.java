@@ -1,4 +1,4 @@
-package by.semenyukna.ts2;
+package by.semenyukna.lawrn;
 
 
 public class Solution {
