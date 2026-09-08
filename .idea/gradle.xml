@@ -23,6 +23,7 @@
             <option value="$PROJECT_DIR$/reorder-list" />
             <option value="$PROJECT_DIR$/reverse-linked-list" />
             <option value="$PROJECT_DIR$/serialize-binary-tree" />
+            <option value="$PROJECT_DIR$/two-sum2" />
             <option value="$PROJECT_DIR$/word-ladder" />
           </set>
         </option>

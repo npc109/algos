@@ -97,6 +97,18 @@ algos/
 │   ├── src/test/java/.../atn/
 │   │   └── SolutionTest.java
 │   └── build.gradle.kts
+├── longest-array-without-repeating-number/ # Самый длинный подмассив без повторений (Sliding Window)
+│   ├── src/main/java/.../lawrn/
+│   │   └── Solution.java
+│   ├── src/test/java/.../lawrn/
+│   │   └── SolutionTest.java
+│   └── build.gradle.kts
+├── two-sum2/                           # Two Sum II — отсортированный массив (Two Pointers)
+│   ├── src/main/java/.../ts2/
+│   │   └── Solution.java
+│   ├── src/test/java/.../ts2/
+│   │   └── SolutionTest.java
+│   └── build.gradle.kts
 ├── build.gradle.kts                    # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                 # Настройки проекта
 └── gradlew                             # Gradle wrapper
@@ -164,4 +176,6 @@ void solveCheck0() {
   - `by.semenyukna.rl` — Reorder List
   - `by.semenyukna.cg` — Clone Graph
   - `by.semenyukna.atn` — Add Two Numbers
+  - `by.semenyukna.lawrn` — Longest Array Without Repeating Number
+  - `by.semenyukna.ts2` — Two Sum II
 

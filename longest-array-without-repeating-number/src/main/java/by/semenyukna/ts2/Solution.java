@@ -1,4 +1,4 @@
-package by.semenyukna.lawrn;
+package by.semenyukna.ts2;
 
 
 import java.util.Hashtable;
