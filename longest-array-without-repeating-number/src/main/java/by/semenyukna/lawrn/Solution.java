@@ -1,30 +1,30 @@
 package by.semenyukna.lawrn;
 
 
-import java.util.HashSet;
+import java.util.Hashtable;
 
 public class Solution {
 
   public int getLongest(int[] a) {
-    int res = a.length > 0 ? 1 : 0;
-    int cur = 1;
+    int cur = 0;
+    int res = 0;
+    int r = 0;
     int l = 0;
-    int r = 1;
-    var pool = new HashSet<Integer>();
-
+    var pool = new Hashtable<Integer, Integer>();
     while (r < a.length) {
-      pool.add(a[l]); // вот это конечно печально но на асимптотику не влияет
-      if (!pool.contains(a[r])) {
-        pool.add(a[r]);
-        cur++;
-        r++;
+      if (pool.containsKey(a[r])) {
+        var newL = pool.get(a[r]);
+        if (newL > l) {
+          l = newL;
+        }
+        pool.replace(a[r], r);
+        cur = r - l;
       } else {
-        pool.clear();
-        l++;
-        r = l + 1;
-        cur = 1;
+        pool.put(a[r], r);
+        cur++;
       }
-      res = Math.max(cur, res);
+      r++;
+      res = Math.max(res, cur);
     }
 
     return res;
