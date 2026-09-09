@@ -115,6 +115,12 @@ algos/
 │   ├── src/test/java/.../fmrsa/
 │   │   └── SolutionTest.java
 │   └── build.gradle.kts
+├── combinations/                         # Все комбинации из k чисел [1..n] (Backtracking)
+│   ├── src/main/java/.../combinations/
+│   │   └── Solution.java
+│   ├── src/test/java/.../combinations/
+│   │   └── SolutionTest.java
+│   └── build.gradle.kts
 ├── build.gradle.kts                    # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                 # Настройки проекта
 └── gradlew                             # Gradle wrapper
@@ -185,4 +191,5 @@ void solveCheck0() {
   - `by.semenyukna.ts2` — Two Sum II
   - `by.semenyukna.lawrn` — Longest Array Without Repeating Number
   - `by.semenyukna.fmrsa` — Find Minimum in Rotated Sorted Array
+  - `by.semenyukna.combinations` — Combinations
 
