@@ -121,6 +121,12 @@ algos/
 │   ├── src/test/java/.../combinations/
 │   │   └── SolutionTest.java
 │   └── build.gradle.kts
+├── warmer-day/                           # Сколько дней ждать до потепления (Monotonic Stack)
+│   ├── src/main/java/.../wd/
+│   │   └── Solution.java
+│   ├── src/test/java/.../wd/
+│   │   └── SolutionTest.java
+│   └── build.gradle.kts
 ├── build.gradle.kts                    # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                 # Настройки проекта
 └── gradlew                             # Gradle wrapper
@@ -192,4 +198,5 @@ void solveCheck0() {
   - `by.semenyukna.lawrn` — Longest Array Without Repeating Number
   - `by.semenyukna.fmrsa` — Find Minimum in Rotated Sorted Array
   - `by.semenyukna.combinations` — Combinations
+  - `by.semenyukna.wd` — Warmer Day (Daily Temperatures)
 
