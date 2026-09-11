@@ -127,6 +127,12 @@ algos/
 │   ├── src/test/java/.../wd/
 │   │   └── SolutionTest.java
 │   └── build.gradle.kts
+├── longest-increasing-subsequence/       # Наибольшая возрастающая подпоследовательность (DP)
+│   ├── src/main/java/.../lls/
+│   │   └── Solution.java
+│   ├── src/test/java/.../lls/
+│   │   └── SolutionTest.java
+│   └── build.gradle.kts
 ├── build.gradle.kts                    # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                 # Настройки проекта
 └── gradlew                             # Gradle wrapper
@@ -199,4 +205,5 @@ void solveCheck0() {
   - `by.semenyukna.fmrsa` — Find Minimum in Rotated Sorted Array
   - `by.semenyukna.combinations` — Combinations
   - `by.semenyukna.wd` — Warmer Day (Daily Temperatures)
+  - `by.semenyukna.lls` — Longest Increasing Subsequence
 
