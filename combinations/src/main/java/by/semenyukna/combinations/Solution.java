@@ -1,13 +1,8 @@
 package by.semenyukna.combinations;
 
 
-import java.sql.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Hashtable;
 import java.util.List;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 
 public class Solution {

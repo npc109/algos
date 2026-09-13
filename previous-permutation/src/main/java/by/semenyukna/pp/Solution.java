@@ -1,8 +1,5 @@
 package by.semenyukna.pp;
 
-
-import java.util.HashSet;
-
 class Solution {
   public int[] prevPermOpt1(int[] arr) {
     var pivot = -1;
@@ -31,8 +28,6 @@ class Solution {
     var tmp = arr[pivot];
     arr[pivot] = arr[max];
     arr[max] = tmp;
-    HashSet<Integer> set = new HashSet<>();
-    var x = Math.max(1,2);
     return arr;
   }
 }

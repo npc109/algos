@@ -1,8 +1,5 @@
 package by.semenyukna.lls;
 
-import java.lang.reflect.Array;
-import java.util.*;
-
 public class Solution {
 
   public int search(int[] nums, int ind, int[] r) {
