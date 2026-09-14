@@ -1,7 +1,7 @@
 package by.semenyukna.lawrn;
 
 
-import java.util.Hashtable;
+import java.util.HashMap;
 
 public class Solution {
 
@@ -10,7 +10,7 @@ public class Solution {
     int res = 0;
     int r = 0;
     int l = 0;
-    var pool = new Hashtable<Integer, Integer>();
+    var pool = new HashMap<Integer, Integer>();
     while (r < a.length) {
       if (pool.containsKey(a[r])) {
         var newL = pool.get(a[r]);

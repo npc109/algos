@@ -158,14 +158,11 @@ algos/
 - **JDK 25** (настроено через Java Toolchain)
 - **Gradle 9.x** (включён через wrapper)
 
-## 📦 Сборка и запуск
+## 📦 Сборка и тесты
 
 ```bash
 # Сборка проекта
 ./gradlew build
-
-# Запуск задачи
-./gradlew :word-ladder:run
 
 # Запуск всех тестов
 ./gradlew test

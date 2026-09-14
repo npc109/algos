@@ -18,6 +18,9 @@ public class Solution {
 
 
   public int lengthOfLIS(int[] nums) {
+    if (nums.length == 0) {
+      return 0;
+    }
     var res = 1;
     int[] r = new int[nums.length];
     for (var i = 0; i < nums.length; i++) {

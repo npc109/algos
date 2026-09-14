@@ -1,6 +1,3 @@
-import org.gradle.api.plugins.JavaPluginExtension
-import org.gradle.jvm.toolchain.JavaLanguageVersion
-
 subprojects {
     apply(plugin = "java-library")
 
