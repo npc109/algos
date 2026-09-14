@@ -10,11 +10,13 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/add-two-numbers" />
+            <option value="$PROJECT_DIR$/binary-tree-maximum-path-sum" />
             <option value="$PROJECT_DIR$/clone-graph" />
             <option value="$PROJECT_DIR$/coin-change" />
             <option value="$PROJECT_DIR$/combinations" />
             <option value="$PROJECT_DIR$/container-with-most-water" />
             <option value="$PROJECT_DIR$/find-minimum-in-rotated-sorted-array" />
+            <option value="$PROJECT_DIR$/kth-largest-element-in-an-array" />
             <option value="$PROJECT_DIR$/longest-array-without-repeating-number" />
             <option value="$PROJECT_DIR$/longest-consecutive-sequence" />
             <option value="$PROJECT_DIR$/longest-increasing-subsequence" />

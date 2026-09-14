@@ -141,6 +141,13 @@ algos/
 │   │   └── SolutionTest.java
 │   ├── README.MD
 │   └── build.gradle.kts
+├── kth-largest-element-in-an-array/      # K-й по величине элемент (Min-heap размера k)
+│   ├── src/main/java/.../kleia/
+│   │   └── Solution.java
+│   ├── src/test/java/.../kleia/
+│   │   └── SolutionTest.java
+│   ├── README.MD
+│   └── build.gradle.kts
 ├── build.gradle.kts                    # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                 # Настройки проекта
 └── gradlew                             # Gradle wrapper
@@ -215,4 +222,5 @@ void solveCheck0() {
   - `by.semenyukna.wd` — Warmer Day (Daily Temperatures)
   - `by.semenyukna.lls` — Longest Increasing Subsequence
   - `by.semenyukna.btmps` — Binary Tree Maximum Path Sum
+  - `by.semenyukna.kleia` — Kth Largest Element in an Array
 

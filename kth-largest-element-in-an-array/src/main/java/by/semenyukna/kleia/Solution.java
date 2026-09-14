@@ -1,32 +1,19 @@
-package by.semenyukna.lawrn;
+package by.semenyukna.kleia;
 
 
-import java.util.Hashtable;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 public class Solution {
+  public int findKthLargest(int[] nums, int k) {
 
-  public int getLongest(int[] a) {
-    int cur = 0;
-    int res = 0;
-    int r = 0;
-    int l = 0;
-    var pool = new Hashtable<Integer, Integer>();
-    while (r < a.length) {
-      if (pool.containsKey(a[r])) {
-        var newL = pool.get(a[r]);
-        if (newL > l) {
-          l = newL;
-        }
-        pool.replace(a[r], r);
-        cur = r - l;
-      } else {
-        pool.put(a[r], r);
-        cur++;
+    PriorityQueue<Integer> q = new PriorityQueue<Integer>();
+    for(var num:nums){
+      q.add(num);
+      if(k<q.size()){
+        q.poll();
       }
-      r++;
-      res = Math.max(res, cur);
     }
-
-    return res;
+    return q.peek();
   }
 }
