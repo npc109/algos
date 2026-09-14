@@ -31,6 +31,7 @@ algos/
 ├── binary-tree-maximum-path-sum/         # Максимальная сумма пути (Tree DFS)
 ├── kth-largest-element-in-an-array/      # K-й по величине (Min-heap)
 ├── number-of-islands/                    # Количество островов (DFS с заливкой)
+├── max-area-of-island/                   # Площадь максимального острова (DFS с заливкой)
 ├── build.gradle.kts                      # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                   # Настройки проекта
 └── gradlew                               # Gradle wrapper
@@ -102,3 +103,4 @@ void solveCheck0() {
   - `by.semenyukna.btmps` — Binary Tree Maximum Path Sum
   - `by.semenyukna.kleia` — Kth Largest Element in an Array
   - `by.semenyukna.noi` — Number of Islands
+  - `by.semenyukna.maoi` — Max Area of Island
