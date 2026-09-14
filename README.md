@@ -133,6 +133,14 @@ algos/
 │   ├── src/test/java/.../lls/
 │   │   └── SolutionTest.java
 │   └── build.gradle.kts
+├── binary-tree-maximum-path-sum/         # Максимальная сумма пути в бинарном дереве (Tree DFS)
+│   ├── src/main/java/.../btmps/
+│   │   ├── TreeNode.java
+│   │   └── Solution.java
+│   ├── src/test/java/.../btmps/
+│   │   └── SolutionTest.java
+│   ├── README.MD
+│   └── build.gradle.kts
 ├── build.gradle.kts                    # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                 # Настройки проекта
 └── gradlew                             # Gradle wrapper
@@ -206,4 +214,5 @@ void solveCheck0() {
   - `by.semenyukna.combinations` — Combinations
   - `by.semenyukna.wd` — Warmer Day (Daily Temperatures)
   - `by.semenyukna.lls` — Longest Increasing Subsequence
+  - `by.semenyukna.btmps` — Binary Tree Maximum Path Sum
 
