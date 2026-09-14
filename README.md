@@ -4,153 +4,36 @@
 
 ## 📁 Структура проекта
 
+Каждый подпроект имеет одинаковую структуру: `<модуль>/src/main/java/by/semenyukna/<пакет>/`, зеркальный `src/test/java/...`, `README.MD` и `build.gradle.kts`.
+
 ```
 algos/
-├── word-ladder/                        # Задача о кратчайшей цепочке преобразований (BFS)
-│   ├── src/main/java/.../wl/
-│   │   └── WordLadder.java
-│   ├── src/test/java/.../wl/
-│   │   └── WordLadderTest.java
-│   └── build.gradle.kts
-├── serialize-binary-tree/              # Сериализация/десериализация бинарного дерева
-│   ├── src/main/java/.../sbt/
-│   │   ├── TreeNode.java
-│   │   └── Codec.java
-│   ├── src/test/java/.../sbt/
-│   │   └── CodecTest.java
-│   └── build.gradle.kts
-├── population-next-right-pointers-in-node/  # Заполнение next-указателей в совершенном дереве
-│   ├── src/main/java/.../rp/
-│   │   ├── Node.java
-│   │   └── Solution.java
-│   ├── src/test/java/.../rp/
-│   │   └── SolutionTest.java
-│   └── build.gradle.kts
-├── pair-nodes-swap/                    # Попарная перестановка узлов связного списка
-│   ├── src/main/java/.../pns/
-│   │   ├── ListNode.java
-│   │   └── Solution.java
-│   ├── src/test/java/.../pns/
-│   │   └── SolutionTest.java
-│   └── build.gradle.kts
-├── next-permutation/                   # Следующая лексикографическая перестановка
-│   ├── src/main/java/.../np/
-│   │   └── Solution.java
-│   ├── src/test/java/.../np/
-│   │   └── SolutionTest.java
-│   └── build.gradle.kts
-├── previous-permutation/               # Предыдущая лексикографическая перестановка
-│   ├── src/main/java/.../pp/
-│   │   └── Solution.java
-│   ├── src/test/java/.../pp/
-│   │   └── SolutionTest.java
-│   └── build.gradle.kts
+├── word-ladder/                          # BFS, кратчайшая цепочка преобразований
+├── serialize-binary-tree/                # Сериализация/десериализация бинарного дерева
+├── population-next-right-pointers-in-node/ # next-указатели в совершенном дереве
+├── pair-nodes-swap/                      # Попарная перестановка узлов связного списка
+├── next-permutation/                     # Следующая лексикографическая перестановка
+├── previous-permutation/                 # Предыдущая лексикографическая перестановка
 ├── remove-duplicates-from-sorted-array2/ # Удаление дубликатов с максимум 2 вхождениями
-│   ├── src/main/java/.../rd/
-│   │   └── Solution.java
-│   ├── src/test/java/.../rd/
-│   │   └── SolutionTest.java
-│   └── build.gradle.kts
-├── longest-consecutive-sequence/       # Поиск самой длинной последовательности чисел
-│   ├── src/main/java/.../lcs/
-│   │   └── Solution.java
-│   ├── src/test/java/.../lcs/
-│   │   └── SolutionTest.java
-│   └── build.gradle.kts
-├── coin-change/                        # Размен монет: минимальное количество монет (BFS, не оптимально)
-│   ├── src/main/java/.../cc/
-│   │   └── Solution.java
-│   ├── src/test/java/.../cc/
-│   │   └── SolutionTest.java
-│   └── build.gradle.kts
-├── container-with-most-water/          # Контейнер с максимальной площадью (two pointers)
-│   ├── src/main/java/.../cwmw/
-│   │   └── Solution.java
-│   ├── src/test/java/.../cwmw/
-│   │   └── SolutionTest.java
-│   └── build.gradle.kts
-├── reverse-linked-list/                # Разворот связного списка (итеративно)
-│   ├── src/main/java/.../rll/
-│   │   ├── ListNode.java
-│   │   └── Solution.java
-│   ├── src/test/java/.../rll/
-│   │   └── SolutionTest.java
-│   └── build.gradle.kts
-├── reorder-list/                       # Перестройка связного списка (L0→Ln→L1→Ln+1...)
-│   ├── src/main/java/.../rl/
-│   │   ├── ListNode.java
-│   │   └── Solution.java
-│   ├── src/test/java/.../rl/
-│   │   └── SolutionTest.java
-│   └── build.gradle.kts
-├── clone-graph/                        # Клонирование неориентированного графа (DFS + HashMap)
-│   ├── src/main/java/.../cg/
-│   │   ├── Node.java
-│   │   └── Solution.java
-│   ├── src/test/java/.../cg/
-│   │   └── SolutionTest.java
-│   └── build.gradle.kts
-├── add-two-numbers/                    # Сумма двух чисел (связные списки)
-│   ├── src/main/java/.../atn/
-│   │   ├── ListNode.java
-│   │   └── Solution.java
-│   ├── src/test/java/.../atn/
-│   │   └── SolutionTest.java
-│   └── build.gradle.kts
-├── longest-array-without-repeating-number/ # Самый длинный подмассив без повторений (Sliding Window)
-│   ├── src/main/java/.../lawrn/
-│   │   └── Solution.java
-│   ├── src/test/java/.../lawrn/
-│   │   └── SolutionTest.java
-│   └── build.gradle.kts
-├── two-sum2/                           # Two Sum II — отсортированный массив (Two Pointers)
-│   ├── src/main/java/.../ts2/
-│   │   └── Solution.java
-│   ├── src/test/java/.../ts2/
-│   │   └── SolutionTest.java
-│   └── build.gradle.kts
-├── find-minimum-in-rotated-sorted-array/ # Поиск минимума в повёрнутом массиве (Binary Search)
-│   ├── src/main/java/.../fmrsa/
-│   │   └── Solution.java
-│   ├── src/test/java/.../fmrsa/
-│   │   └── SolutionTest.java
-│   └── build.gradle.kts
-├── combinations/                         # Все комбинации из k чисел [1..n] (Backtracking)
-│   ├── src/main/java/.../combinations/
-│   │   └── Solution.java
-│   ├── src/test/java/.../combinations/
-│   │   └── SolutionTest.java
-│   └── build.gradle.kts
-├── warmer-day/                           # Сколько дней ждать до потепления (Monotonic Stack)
-│   ├── src/main/java/.../wd/
-│   │   └── Solution.java
-│   ├── src/test/java/.../wd/
-│   │   └── SolutionTest.java
-│   └── build.gradle.kts
-├── longest-increasing-subsequence/       # Наибольшая возрастающая подпоследовательность (DP)
-│   ├── src/main/java/.../lls/
-│   │   └── Solution.java
-│   ├── src/test/java/.../lls/
-│   │   └── SolutionTest.java
-│   └── build.gradle.kts
-├── binary-tree-maximum-path-sum/         # Максимальная сумма пути в бинарном дереве (Tree DFS)
-│   ├── src/main/java/.../btmps/
-│   │   ├── TreeNode.java
-│   │   └── Solution.java
-│   ├── src/test/java/.../btmps/
-│   │   └── SolutionTest.java
-│   ├── README.MD
-│   └── build.gradle.kts
-├── kth-largest-element-in-an-array/      # K-й по величине элемент (Min-heap размера k)
-│   ├── src/main/java/.../kleia/
-│   │   └── Solution.java
-│   ├── src/test/java/.../kleia/
-│   │   └── SolutionTest.java
-│   ├── README.MD
-│   └── build.gradle.kts
-├── build.gradle.kts                    # Общий конфигурационный файл Gradle
-├── settings.gradle.kts                 # Настройки проекта
-└── gradlew                             # Gradle wrapper
+├── longest-consecutive-sequence/         # Самая длинная последовательность чисел
+├── coin-change/                          # Размен монет (BFS, не оптимально)
+├── container-with-most-water/            # Контейнер с максимальной площадью
+├── reverse-linked-list/                  # Разворот связного списка
+├── reorder-list/                         # Перестройка связного списка
+├── clone-graph/                          # Клонирование графа
+├── add-two-numbers/                      # Сумма двух чисел (связные списки)
+├── longest-array-without-repeating-number/ # Подмассив без повторений (Sliding Window)
+├── two-sum2/                             # Two Sum II (Two Pointers)
+├── find-minimum-in-rotated-sorted-array/ # Минимум в повёрнутом массиве (Binary Search)
+├── combinations/                         # Комбинации из k чисел (Backtracking)
+├── warmer-day/                           # Daily Temperatures (Monotonic Stack)
+├── longest-increasing-subsequence/       # НВП (DP)
+├── binary-tree-maximum-path-sum/         # Максимальная сумма пути (Tree DFS)
+├── kth-largest-element-in-an-array/      # K-й по величине (Min-heap)
+├── number-of-islands/                    # Количество островов (DFS с заливкой)
+├── build.gradle.kts                      # Общий конфигурационный файл Gradle
+├── settings.gradle.kts                   # Настройки проекта
+└── gradlew                               # Gradle wrapper
 ```
 
 ## 🛠 Требования
@@ -193,8 +76,6 @@ void solveCheck0() {
 | Сборка | Gradle (Kotlin DSL) |
 | Тестирование | JUnit 5 (Jupiter) |
 
-
-
 ## Структура кода
 
 - **Пакеты:**
@@ -220,4 +101,4 @@ void solveCheck0() {
   - `by.semenyukna.lls` — Longest Increasing Subsequence
   - `by.semenyukna.btmps` — Binary Tree Maximum Path Sum
   - `by.semenyukna.kleia` — Kth Largest Element in an Array
-
+  - `by.semenyukna.noi` — Number of Islands
