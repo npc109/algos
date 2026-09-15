@@ -33,6 +33,7 @@ algos/
 ├── number-of-islands/                    # Количество островов (DFS с заливкой)
 ├── max-area-of-island/                   # Площадь максимального острова (DFS с заливкой)
 ├── rotting-oranges/                      # Гниющие апельсины (BFS по уровням, multi-source)
+├── zero-one-matrix/                      # Расстояние до ближайшего нуля (multi-source BFS)
 ├── build.gradle.kts                      # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                   # Настройки проекта
 └── gradlew                               # Gradle wrapper
@@ -106,3 +107,4 @@ void solveCheck0() {
   - `by.semenyukna.noi` — Number of Islands
   - `by.semenyukna.maoi` — Max Area of Island
   - `by.semenyukna.ro` — Rotting Oranges
+  - `by.semenyukna.zom` — 01 Matrix

@@ -34,6 +34,7 @@
             <option value="$PROJECT_DIR$/two-sum2" />
             <option value="$PROJECT_DIR$/warmer-day" />
             <option value="$PROJECT_DIR$/word-ladder" />
+            <option value="$PROJECT_DIR$/zero-one-matrix" />
           </set>
         </option>
       </GradleProjectSettings>
