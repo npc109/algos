@@ -36,6 +36,7 @@ algos/
 ├── zero-one-matrix/                      # Расстояние до ближайшего нуля (multi-source BFS)
 ├── course-schedule/                      # Цикл в графе зависимостей (DFS с тремя состояниями)
 ├── course-schedule-ii/                   # Топологический порядок курсов (DFS, post-order)
+├── pacific-atlantic-water-flow/          # Два океана (BFS от границ)
 ├── build.gradle.kts                      # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                   # Настройки проекта
 └── gradlew                               # Gradle wrapper
@@ -112,3 +113,4 @@ void solveCheck0() {
   - `by.semenyukna.zom` — 01 Matrix
   - `by.semenyukna.cs` — Course Schedule
   - `by.semenyukna.csii` — Course Schedule II
+  - `by.semenyukna.pawf` — Pacific Atlantic Water Flow
