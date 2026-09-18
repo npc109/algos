@@ -15,10 +15,10 @@ public class Solution {
 
   }
 
-  private void bfs(int[] el, int[][] h, boolean[][][] v, Queue q, int[] size, int o) {
+  private void bfs(int[] el, int[][] h, boolean[][][] v, Queue<int[]> q, int[] size, int o) {
 
     var cur = h[el[0]][el[1]];
-    if (v[el[0]][el[1]][o] == true) {
+    if (v[el[0]][el[1]][o]) {
       return;
     }
     v[el[0]][el[1]][o] = true;
@@ -69,7 +69,7 @@ public class Solution {
 
     for (var i = 0; i < v.length; i++) {
       for (var j = 0; j < v[i].length; j++) {
-        if (v[i][j][0] == true && v[i][j][1] == true) {
+        if (v[i][j][0] && v[i][j][1]) {
           res.add(List.of(i, j));
         }
       }
