@@ -42,6 +42,8 @@ algos/
 ├── surrounded-regions/                   # Захват областей (BFS от краёв)
 ├── is-graph-bipartite/                   # Двудольность (раскраска в два цвета, DFS)
 ├── shortest-path-in-binary-matrix/       # Кратчайший путь в матрице (BFS, 8 направлений)
+├── house-robber/                         # Ограбление домов (1D DP, O(1) памяти)
+├── diameter-of-binary-tree/              # Диаметр дерева (post-order DFS)
 ├── build.gradle.kts                      # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                   # Настройки проекта
 └── gradlew                               # Gradle wrapper
@@ -124,3 +126,5 @@ void solveCheck0() {
   - `by.semenyukna.sr` — Surrounded Regions
   - `by.semenyukna.igb` — Is Graph Bipartite?
   - `by.semenyukna.spbm` — Shortest Path in Binary Matrix
+  - `by.semenyukna.hr` — House Robber
+  - `by.semenyukna.dobt` — Diameter of Binary Tree
