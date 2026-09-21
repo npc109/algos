@@ -44,6 +44,8 @@ algos/
 ├── shortest-path-in-binary-matrix/       # Кратчайший путь в матрице (BFS, 8 направлений)
 ├── house-robber/                         # Ограбление домов (1D DP, O(1) памяти)
 ├── diameter-of-binary-tree/              # Диаметр дерева (post-order DFS)
+├── 3sum/                                 # Тройки с нулевой суммой (сортировка + two pointers)
+├── next-greater-element-i/               # Следующий больший элемент (монотонный стек + HashMap)
 ├── build.gradle.kts                      # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                   # Настройки проекта
 └── gradlew                               # Gradle wrapper
@@ -128,3 +130,5 @@ void solveCheck0() {
   - `by.semenyukna.spbm` — Shortest Path in Binary Matrix
   - `by.semenyukna.hr` — House Robber
   - `by.semenyukna.dobt` — Diameter of Binary Tree
+  - `by.semenyukna.ts3` — 3Sum
+  - `by.semenyukna.ngei` — Next Greater Element I
