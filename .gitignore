@@ -5,6 +5,9 @@ build/
 !**/src/test/**/build/
 .kotlin
 
+### Локальный GRADLE_USER_HOME (корень ФС read-only, см. test.sh) ###
+.gradle-home/
+
 ### IntelliJ IDEA ###
 .idea/modules.xml
 .idea/jarRepositories.xml
@@ -42,4 +45,12 @@ bin/
 ### Mac OS ###
 .DS_Store
 QWEN.md
+
+### Личное (планы и журнал прогресса) ###
 PLAN.md
+PROGRESS.md
+journal/
+SESSION-SUMMARY.md
+
+### Артефакты прогона тестов ###
+.build-tests/

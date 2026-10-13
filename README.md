@@ -46,6 +46,12 @@ algos/
 ├── diameter-of-binary-tree/              # Диаметр дерева (post-order DFS)
 ├── 3sum/                                 # Тройки с нулевой суммой (сортировка + two pointers)
 ├── next-greater-element-i/               # Следующий больший элемент (монотонный стек + HashMap)
+├── validate-binary-search-tree/          # Проверка BST (DFS с диапазоном значений)
+├── kth-smallest-element-in-a-bst/        # K-й наименьший в BST (in-order с ранним выходом)
+├── lowest-common-ancestor-of-a-binary-tree/  # LCA (post-order, ответ возвращается наверх)
+├── network-delay-time/                   # Задержка сети (Дейкстра, PriorityQueue)
+├── min-cost-to-connect-all-points/       # MST: Краскал (Union-Find) + Прим (PriorityQueue)
+├── cheapest-flights-within-k-stops/      # Bellman-Ford + DFS с мемоизацией
 ├── build.gradle.kts                      # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                   # Настройки проекта
 └── gradlew                               # Gradle wrapper
@@ -91,44 +97,3 @@ void solveCheck0() {
 | Сборка | Gradle (Kotlin DSL) |
 | Тестирование | JUnit 5 (Jupiter) |
 
-## Структура кода
-
-- **Пакеты:**
-  - `by.semenyukna.wl` — Word Ladder
-  - `by.semenyukna.sbt` — Serialize Binary Tree
-  - `by.semenyukna.rp` — Population Next Right Pointers
-  - `by.semenyukna.pns` — Pair Nodes Swap
-  - `by.semenyukna.np` — Next Permutation
-  - `by.semenyukna.pp` — Previous Permutation
-  - `by.semenyukna.rd` — Remove Duplicates From Sorted Array 2
-  - `by.semenyukna.lcs` — Longest Consecutive Sequence
-  - `by.semenyukna.cc` — Coin Change (BFS, не оптимально)
-  - `by.semenyukna.cwmw` — Container With Most Water
-  - `by.semenyukna.rll` — Reverse Linked List
-  - `by.semenyukna.rl` — Reorder List
-  - `by.semenyukna.cg` — Clone Graph
-  - `by.semenyukna.atn` — Add Two Numbers
-  - `by.semenyukna.ts2` — Two Sum II
-  - `by.semenyukna.lawrn` — Longest Array Without Repeating Number
-  - `by.semenyukna.fmrsa` — Find Minimum in Rotated Sorted Array
-  - `by.semenyukna.combinations` — Combinations
-  - `by.semenyukna.wd` — Warmer Day (Daily Temperatures)
-  - `by.semenyukna.lls` — Longest Increasing Subsequence
-  - `by.semenyukna.btmps` — Binary Tree Maximum Path Sum
-  - `by.semenyukna.kleia` — Kth Largest Element in an Array
-  - `by.semenyukna.noi` — Number of Islands
-  - `by.semenyukna.maoi` — Max Area of Island
-  - `by.semenyukna.ro` — Rotting Oranges
-  - `by.semenyukna.zom` — 01 Matrix
-  - `by.semenyukna.cs` — Course Schedule
-  - `by.semenyukna.csii` — Course Schedule II
-  - `by.semenyukna.pawf` — Pacific Atlantic Water Flow
-  - `by.semenyukna.rc` — Redundant Connection
-  - `by.semenyukna.nop` — Number of Provinces
-  - `by.semenyukna.sr` — Surrounded Regions
-  - `by.semenyukna.igb` — Is Graph Bipartite?
-  - `by.semenyukna.spbm` — Shortest Path in Binary Matrix
-  - `by.semenyukna.hr` — House Robber
-  - `by.semenyukna.dobt` — Diameter of Binary Tree
-  - `by.semenyukna.ts3` — 3Sum
-  - `by.semenyukna.ngei` — Next Greater Element I

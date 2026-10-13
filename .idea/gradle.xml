@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/3sum" />
             <option value="$PROJECT_DIR$/add-two-numbers" />
             <option value="$PROJECT_DIR$/binary-tree-maximum-path-sum" />
+            <option value="$PROJECT_DIR$/cheapest-flights-within-k-stops" />
             <option value="$PROJECT_DIR$/clone-graph" />
             <option value="$PROJECT_DIR$/coin-change" />
             <option value="$PROJECT_DIR$/combinations" />
@@ -23,10 +24,14 @@
             <option value="$PROJECT_DIR$/house-robber" />
             <option value="$PROJECT_DIR$/is-graph-bipartite" />
             <option value="$PROJECT_DIR$/kth-largest-element-in-an-array" />
+            <option value="$PROJECT_DIR$/kth-smallest-element-in-a-bst" />
             <option value="$PROJECT_DIR$/longest-array-without-repeating-number" />
             <option value="$PROJECT_DIR$/longest-consecutive-sequence" />
             <option value="$PROJECT_DIR$/longest-increasing-subsequence" />
+            <option value="$PROJECT_DIR$/lowest-common-ancestor-of-a-binary-tree" />
             <option value="$PROJECT_DIR$/max-area-of-island" />
+            <option value="$PROJECT_DIR$/min-cost-to-connect-all-points" />
+            <option value="$PROJECT_DIR$/network-delay-time" />
             <option value="$PROJECT_DIR$/next-greater-element-i" />
             <option value="$PROJECT_DIR$/next-permutation" />
             <option value="$PROJECT_DIR$/number-of-islands" />
@@ -44,6 +49,7 @@
             <option value="$PROJECT_DIR$/shortest-path-in-binary-matrix" />
             <option value="$PROJECT_DIR$/surrounded-regions" />
             <option value="$PROJECT_DIR$/two-sum2" />
+            <option value="$PROJECT_DIR$/validate-binary-search-tree" />
             <option value="$PROJECT_DIR$/warmer-day" />
             <option value="$PROJECT_DIR$/word-ladder" />
             <option value="$PROJECT_DIR$/zero-one-matrix" />

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebToolsSettings">
+    <option name="autoDetectRun" value="true" />
+    <option name="packageManagerPath" value="$USER_HOME$/.nvm/versions/node/v26.8.1/bin/npm" />
+    <option name="runtimePath" value="$USER_HOME$/.nvm/versions/node/v26.8.1/bin/node" />
+  </component>
+</project>
