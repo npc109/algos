@@ -1,3 +1,4 @@
+.idea
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
@@ -54,3 +55,4 @@ SESSION-SUMMARY.md
 
 ### Артефакты прогона тестов ###
 .build-tests/
+test.sh
