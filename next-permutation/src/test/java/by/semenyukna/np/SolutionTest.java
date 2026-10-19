@@ -72,7 +72,7 @@ public class SolutionTest {
   @Test
   public void testSolution7() {
     int[] cur = {4,2,0,2,3,2,0};
-    // {4,2,0,3,2,2,0}
+    // 4 2 0 3 0 2 2 — хвост [2,2,0] после перестановки разворачивается в [0,2,2]
     int[] need = {4,2,0,3,0,2,2};
     var s = new Solution();
     s.nextPermutation(cur);

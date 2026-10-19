@@ -1,42 +1,30 @@
 # 297. Serialize and Deserialize Binary Tree
-- leetcode
-    - https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/
-- LVL
-    - Hard
-- Topics
-    - BFS
-    - String
-    - Design
-    - Tree
-    - Binary tree
 
-Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.
+**Сложность:** Hard  
+**Источник:** [LeetCode](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)  
+**Темы:** Tree, BFS, Design, String
 
-Design an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure.
+## Описание
 
-Example 1:
+Реализовать `serialize(TreeNode)` — превратить дерево в строку формата LeetCode `[1,2,3,null,null,4,5]`, и `deserialize(String)` — восстановить из неё **то же самое** дерево. Формат сериализации не регламентирован.
 
-    Input: root = [1,2,3,null,null,4,5]
-    Output: [1,2,3,null,null,4,5]
+В основе — обход по уровням очередью: пустые узлы пишутся как `null`, полностью `null`-уровни в хвост не добавляются.
 
-Example 2:
+**Важно:**
+- Контракт — round-trip: `deserialize(serialize(root))` даёт дерево, равное исходному, а не любое
+- Строка должна быть корректна для одноузлового (`[0]`), левоскошенного и вырожденного дерева (`[1,null,2]`)
+- Пустое дерево — `[]`, а `deserialize` обязан принимать и `[]`, и `[null]`
+- Уровни из одних `null` в конце отбрасываются — иначе хвостовая пунктуация ломается
+- В LeetCode этот класс надо назвать `Codec` и **не** оставлять ссылок на другие классы
 
-    Input: root = []
-    Output: []
+## Сложность
 
+- **Время:** `O(n)` — каждый узел попадает в строку и очередь один раз
+- **Память:** `O(n)` — строка результата и очередь уровня
 
-**Описание задачи:** Реализовать алгоритмы сериализации и десериализации бинарного дерева.
+## Примеры
 
-**Алгоритм:** Обход дерева по уровням (level-order traversal) с использованием очереди.
-
-**Пример:**
-```
-Дерево:
-       1
-      / \
-     2   3
-        / \
-       4   5
-
-Сериализация: [1,2,3,null,null,4,5]
-```
+| Вход | Выход |
+|------|-------|
+| `[1,2,3,null,null,4,5]` | `[1,2,3,null,null,4,5]` |
+| `[]` | `[]` |
