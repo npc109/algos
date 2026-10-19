@@ -1,68 +1,106 @@
-# Word Ladder
-- leetcode
-    - https://leetcode.com/problems/word-ladder/description/
-- LVL
-    - Hard
-- Topics
-  - Hash Table
-  - String
-  - BFS
-    
-A transformation sequence from word beginWord to word endWord using a dictionary wordList is a sequence of words beginWord -> s1 -> s2 -> ... -> sk such that:
+# 127. Word Ladder
 
-Every adjacent pair of words differs by a single letter.
-Every si for 1 <= i <= k is in wordList. Note that beginWord does not need to be in wordList.
-sk == endWord
-Given two words, beginWord and endWord, and a dictionary wordList, return the number of words in the shortest transformation sequence from beginWord to endWord, or 0 if no such sequence exists.
+**Сложность:** Hard  
+**Источник:** [LeetCode](https://leetcode.com/problems/word-ladder/)  
+**Темы:** BFS, Hash Table, String
 
+## Описание
 
+Даны `beginWord`, `endWord` и `wordList`. За один шаг меняется **ровно одна буква**, результат обязан быть в `wordList`. Вернуть **длину кратчайшей цепочки** (число слов, включая оба конца) или `0`, если пути нет.
 
-**Example 1:**
+**Ограничения:** слова одной длины `1..10`, до `5000` слов, только строчные английские буквы.
 
-    **Input**: beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log","cog"]
-    
-    **Output**: 5
-    
-    **Explanation**: One shortest transformation sequence is "hit" -> "hot" -> "dot" -> "dog" -> cog", which is 5 words long.
-
-**Example 2:**
-
-    **Input**: beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log"]
-    **Output**: 0
-    **Explanation**: The endWord "cog" is not in wordList, therefore there is no valid transformation sequence.
-
-
-Constraints:
-
-1 <= beginWord.length <= 10
-
-endWord.length == beginWord.length
-
-1 <= wordList.length <= 5000
-
-wordList[i].length == beginWord.length
-
-beginWord, endWord, and wordList[i] consist of lowercase English letters.
-
-beginWord != endWord
-
-All the words in wordList are unique.
-
-
-**Описание задачи:** Дана цепочка слов, где каждое следующее слово отличается от предыдущего ровно одной буквой. Необходимо найти кратчайший путь преобразования от начального слова к конечному, используя слова из заданного пула.
-
-**Алгоритм:** Поиск в ширину (BFS) для нахождения кратчайшего пути в графе, где вершины — слова, а рёбра соединяют слова с одной отличающейся буквой.
-
-**Пример:**
 ```
-Вход: "hit" → "cog"
-Пул слов: ["hot","dot","dog","lot","log","cog"]
-Результат: 5
+begin = "hit", end = "cog"
+wordList = ["hot","dot","dog","lot","log","cog"]
+hit → hot → dot → dog → cog   = 5 слов (4 шага)
 ```
 
-**Визуализация пути:**
+## Ключевая ловушка: ответ — слова, а не шаги
+
+`hit → hot → dot → dog → cog` — **4 преобразования**, но ответ **5**.
+
+Считаем **слова**: `beginWord` идёт как `1`, каждое новое слово `+1`.
+
+## Алгоритм: BFS с ленивой генерацией соседей
+
+Слова — вершины графа, ребро = «отличаются на одну букву». Нужен **кратчайший путь**, значит BFS.
+
+**Два способа находить соседей:**
+
+| Способ | Сложность | Комментарий |
+|---|---|---|
+| Сравнить с каждым словом списка | `O(n² · L)` | всегда весь граф |
+| **Менять по одной букве** | `O(посещённых · L · 26 · L)` | **лениво, по ходу BFS** |
+
+**Второй быстрее**, если путь короткий: работа пропорциональна числу **посещённых** вершин, а не всех.
+
+**Граф не строится заранее.** Соседи генерируются прямо в BFS:
+
+```java
+char[] ca = cur.toCharArray();
+for (int pos = 0; pos < ca.length; pos++) {
+    char old = ca[pos];
+    for (char ch = 'a'; ch <= 'z'; ch++) {
+        if (ch == old) continue;
+        ca[pos] = ch;
+        String next = new String(ca);
+        if (wordSet.contains(next) && visited.add(next)) {
+            if (next.equals(endWord)) return res + 1;
+            q.add(next);
+        }
+    }
+    ca[pos] = old;          // ← обязательно вернуть букву
+}
 ```
-hit → hot → dot → dog → cog
-      ↑     ↑     ↑     ↑
-     одна буква отличается
+
+## Ключевые детали
+
+**1. `visited.add()` при добавлении, а не при извлечении.**
+
+`Set.add` возвращает `boolean` — `true`, если слова не было. Это **одновременно** проверка и пометка. Пометить при извлечении — значит допустить дубликаты в очереди (та же ошибка, что была в Surrounded Regions).
+
+**Корректно, потому что BFS обрабатывает уровнями:** слово, добавленное на уровне `d`, не может иметь путь короче `d`.
+
+**2. `HashSet` для `wordSet`, а не `List`.**
+
+`List.contains()` — `O(n)` → весь алгоритм `O(n²)`. `HashSet.contains()` — `O(1)` в среднем (плюс `O(L)` на хеш).
+
+**3. `ca[pos] = old` после перебора букв.**
+
+Без этого массив портится, и следующие позиции обрабатываются неверно.
+
+**4. Оптимизация: `wordSet.remove()` вместо `visited`.**
+
+```java
+if (wordSet.remove(next)) { ... }   // одна структура вместо двух
 ```
+
+Слово удаляется из словаря при добавлении в очередь — оно одновременно играет роль `visited`. Меньше памяти, и вернуться в него нельзя.
+
+## Сложность
+
+- **Время:** `O(посещённых · L² · 26)` — генерация `L·26` вариантов, каждый `O(L)` на создание строки и хеш
+- **Память:** `O(n)` — очередь и `visited`
+
+## Ошибки при решении
+
+| Ошибка | Причина |
+|---|---|
+| Строил **весь граф** заранее | `O(n·L²·26)` всегда, даже если путь короткий. На `L=10`, `n=5000` — в 20 раз медленнее ленивой генерации |
+| `visited.add()` при извлечении | дубликаты в очереди |
+| Путаница с ответом | возвращал шаги, а не слова |
+
+## Проверка
+
+19 тестов, включая сверку с независимым эталоном — BFS на **явно построенном** графе (сравнение всех пар). На маленьких входах это допустимо и не зависит от решения.
+
+## Примеры
+
+| begin | end | wordList | Выход |
+|---|---|---|---|
+| `hit` | `cog` | `["hot","dot","dog","lot","log","cog"]` | `5` |
+| `hit` | `cog` | `["hot","dot","dog","lot","log"]` | `0` |
+| `hot` | `dot` | `["dot"]` | `2` |
+| `a` | `c` | `["b","c"]` | `2` |
+| `hit` | `cog` | `["xxx","yyy","cog"]` | `0` |

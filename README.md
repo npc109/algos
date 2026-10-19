@@ -52,6 +52,7 @@ algos/
 ├── network-delay-time/                   # Задержка сети (Дейкстра, PriorityQueue)
 ├── min-cost-to-connect-all-points/       # MST: Краскал (Union-Find) + Прим (PriorityQueue)
 ├── cheapest-flights-within-k-stops/      # Bellman-Ford + DFS с мемоизацией
+├── binary-tree-level-order-traversal/    # BFS по уровням (фиксация размера очереди)
 ├── build.gradle.kts                      # Общий конфигурационный файл Gradle
 ├── settings.gradle.kts                   # Настройки проекта
 └── gradlew                               # Gradle wrapper
@@ -72,7 +73,7 @@ algos/
 ./gradlew test
 
 # Запуск конкретного теста
-./gradlew :word-ladder:test --tests "WordLadderTest"
+./gradlew :word-ladder:test --tests "SolutionTest"
 ```
 
 ## 🧪 Тестирование
