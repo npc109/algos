@@ -24,6 +24,7 @@ algos/
 ├── add-two-numbers/                      # Сумма двух чисел (связные списки)
 ├── longest-array-without-repeating-number/ # Подмассив без повторений (Sliding Window)
 ├── longest-substring-without-repeating-characters/ # Подстрока без повторов (Sliding Window)
+├── longest-repeating-character-replacement/ # K замен в окне (Sliding Window)
 ├── two-sum2/                             # Two Sum II (Two Pointers)
 ├── find-minimum-in-rotated-sorted-array/ # Минимум в повёрнутом массиве (Binary Search)
 ├── combinations/                         # Комбинации из k чисел (Backtracking)

@@ -57,3 +57,5 @@ SESSION-SUMMARY.md
 ### Артефакты прогона тестов ###
 .build-tests/
 test.sh
+.agents
+AGENTS.md
