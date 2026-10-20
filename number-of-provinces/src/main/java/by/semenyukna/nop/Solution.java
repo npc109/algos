@@ -1,41 +1,43 @@
 package by.semenyukna.nop;
 
-public class Solution {
+class Solution {
 
   private boolean union(int a, int b, int[] parent) {
-    var pa = find(a, parent);
-    var pb = find(b, parent);
-    if (pb == pa) {
+    var fa = find(a, parent);
+    var fb = find(b, parent);
+    if (fa == fb) {
       return true;
+    } else {
+      parent[fa] = fb;
     }
-    parent[pb] = pa;
+
     return false;
   }
 
-  private int find(int x, int[] parent) {
-    while (x != parent[x]) {
-      parent[x] = parent[parent[x]];
-      x = parent[x];
+  private int find(int cur, int[] parent) {
+    while (cur != parent[cur]) {
+      parent[cur] = parent[parent[cur]];
+      cur = parent[cur];
     }
-    return x;
+    return cur;
+
   }
 
   public int findCircleNum(int[][] isConnected) {
-    var parent = new int[isConnected.length];
+    var res = isConnected.length;
+    int[] parent = new int[isConnected.length];
     for (var i = 0; i < parent.length; i++) {
       parent[i] = i;
     }
-    var c = parent.length;
-    for (var i = 0; i < parent.length; i++) {
-      for (var j = i + 1; j < parent.length; j++) {
-        if (isConnected[i][j] == 1) {
-          if (!union(i, j, parent)) {
-            c--;
-          }
+    for (var i = 0; i < isConnected.length; i++) {
+      for (var j = 0; j < isConnected[i].length; j++) {
+        if (isConnected[i][j] != 1) continue;
+        if (!union(i, j, parent)) {
+          res--;
         }
-
       }
+
     }
-    return c;
+    return res;
   }
 }
