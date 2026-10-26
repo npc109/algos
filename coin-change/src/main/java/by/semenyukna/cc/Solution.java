@@ -1,39 +1,22 @@
 package by.semenyukna.cc;
 
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.Arrays;
 
 public class Solution {
 
   public int coinChange(int[] coins, int amount) {
-    if (amount == 0) {
-      return 0;
-    }
-    Queue<Integer> queue = new LinkedList<>();
-    HashSet<Integer> visited = new HashSet<>();
-    for (var x : coins) {
-      queue.add(x);
-    }
-    var step = 1;
+    int[] dp = new int[amount + 1];
+    Arrays.fill(dp, amount + 1);
+    dp[0] = 0;
 
-    while (!queue.isEmpty()) {
-      var size = queue.size();
-      for (int i = 0; i < size; i++) {
-        var cur = queue.poll();
-        if (visited.contains(cur)) {
-          continue;
-        }
-        visited.add(cur);
-        if (cur == amount) return step;
-        if (cur < amount) {
-          for (var x : coins) {
-            queue.add(x + cur);
-          }
+    for (int i = 1; i <= amount; i++) {
+      for (var coin : coins) {
+        if (i - coin >= 0) {
+          dp[i] = Math.min(dp[i], 1 + dp[i - coin]);
         }
       }
-      step++;
     }
-    return -1;
+
+    return dp[amount] > amount ? -1 : dp[amount];
   }
 }

@@ -1,33 +1,35 @@
 package by.semenyukna.lls;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Solution {
 
-  public int search(int[] nums, int ind, int[] r) {
-    if (r[ind] != 0) {
-      return r[ind];
-    }
-    var max = 1;
-    for (var i = ind; i >= 0; i--) {
-      if (nums[ind] > nums[i]) {
-        max = Math.max(max, 1 + search(nums, i, r));
+  private int lowerBound(List<Integer> arr, int target) {
+    int left = 0;
+    int right = arr.size() - 1;
+
+    while (left <= right) {
+      int mid = (left + right) / 2;
+      if (arr.get(mid) < target) {
+        left = mid + 1;
+      } else {
+        right = mid - 1;
       }
     }
-    return max;
 
+    return left;
   }
 
-
   public int lengthOfLIS(int[] nums) {
-    if (nums.length == 0) {
-      return 0;
+    List<Integer> tails = new ArrayList<>();
+    for (var n : nums) {
+      if (tails.isEmpty() || tails.getLast() < n) {
+        tails.add(n);
+      } else {
+        tails.set(lowerBound(tails, n), n);
+      }
     }
-    var res = 1;
-    int[] r = new int[nums.length];
-    for (var i = 0; i < nums.length; i++) {
-      int cur = search(nums, i, r);
-      res = Math.max(res, cur);
-      r[i] = cur;
-    }
-    return res;
+    return tails.size();
   }
 }

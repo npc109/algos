@@ -27,6 +27,8 @@ algos/
 ├── longest-repeating-character-replacement/ # K замен в окне (Sliding Window)
 ├── two-sum2/                             # Two Sum II (Two Pointers)
 ├── find-minimum-in-rotated-sorted-array/ # Минимум в повёрнутом массиве (Binary Search)
+├── koko-eating-bananas/                  # Минимальная скорость поедания (Binary Search по ответу)
+├── split-array-largest-sum/              # Разбиение на k отрезков с минимальным максимумом (Binary Search по ответу)
 ├── combinations/                         # Комбинации из k чисел (Backtracking)
 ├── warmer-day/                           # Daily Temperatures (Monotonic Stack)
 ├── longest-increasing-subsequence/       # НВП (DP)

@@ -1,6 +1,6 @@
 package by.semenyukna.hr;
 
-public class Solution {
+public class  Solution {
 
   public int rob(int[] nums) {
     int prev1 = 0;
