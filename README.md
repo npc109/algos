@@ -34,6 +34,7 @@ algos/
 ├── longest-increasing-subsequence/       # НВП (DP)
 ├── binary-tree-maximum-path-sum/         # Максимальная сумма пути (Tree DFS)
 ├── kth-largest-element-in-an-array/      # K-й по величине (Min-heap)
+├── top-k-frequent-elements/              # K самых частых элементов (Min-heap по частоте)
 ├── number-of-islands/                    # Количество островов (DFS с заливкой)
 ├── max-area-of-island/                   # Площадь максимального острова (DFS с заливкой)
 ├── rotting-oranges/                      # Гниющие апельсины (BFS по уровням, multi-source)
