@@ -30,6 +30,7 @@ algos/
 ├── koko-eating-bananas/                  # Минимальная скорость поедания (Binary Search по ответу)
 ├── split-array-largest-sum/              # Разбиение на k отрезков с минимальным максимумом (Binary Search по ответу)
 ├── combinations/                         # Комбинации из k чисел (Backtracking)
+├── permutations/                         # Все перестановки (Backtracking)
 ├── warmer-day/                           # Daily Temperatures (Monotonic Stack)
 ├── longest-increasing-subsequence/       # НВП (DP)
 ├── binary-tree-maximum-path-sum/         # Максимальная сумма пути (Tree DFS)
