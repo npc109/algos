@@ -49,6 +49,8 @@ algos/
 ├── is-graph-bipartite/                   # Двудольность (раскраска в два цвета, DFS)
 ├── shortest-path-in-binary-matrix/       # Кратчайший путь в матрице (BFS, 8 направлений)
 ├── house-robber/                         # Ограбление домов (1D DP, O(1) памяти)
+├── house-robber-ii/                      # Ограбление домов в круге (1D DP)
+├── climbing-stairs/                      # Число способов подняться (Фибоначчи, O(1) памяти)
 ├── diameter-of-binary-tree/              # Диаметр дерева (post-order DFS)
 ├── 3sum/                                 # Тройки с нулевой суммой (сортировка + two pointers)
 ├── next-greater-element-i/               # Следующий больший элемент (монотонный стек + HashMap)
