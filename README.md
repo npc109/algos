@@ -17,6 +17,9 @@ algos/
 ├── remove-duplicates-from-sorted-array2/ # Удаление дубликатов с максимум 2 вхождениями
 ├── longest-consecutive-sequence/         # Самая длинная последовательность чисел
 ├── coin-change/                          # Размен монет (BFS, не оптимально)
+├── partition-equal-subset-sum/           # Разбиение на две равные суммы (0/1 knapsack)
+├── target-sum/                           # Число способов расставить +/- (knapsack + мемоизация)
+├── longest-palindromic-substring/        # Самая длинная подстрока-палиндром (интервальный DP)
 ├── container-with-most-water/            # Контейнер с максимальной площадью
 ├── reverse-linked-list/                  # Разворот связного списка
 ├── reorder-list/                         # Перестройка связного списка
