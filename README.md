@@ -20,6 +20,7 @@ algos/
 ├── partition-equal-subset-sum/           # Разбиение на две равные суммы (0/1 knapsack)
 ├── target-sum/                           # Число способов расставить +/- (knapsack + мемоизация)
 ├── longest-palindromic-substring/        # Самая длинная подстрока-палиндром (интервальный DP)
+├── palindromic-substrings/               # Число палиндромных подстрок (интервальный DP)
 ├── container-with-most-water/            # Контейнер с максимальной площадью
 ├── reverse-linked-list/                  # Разворот связного списка
 ├── reorder-list/                         # Перестройка связного списка
