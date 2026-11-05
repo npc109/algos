@@ -54,6 +54,7 @@ algos/
 ├── shortest-path-in-binary-matrix/       # Кратчайший путь в матрице (BFS, 8 направлений)
 ├── house-robber/                         # Ограбление домов (1D DP, O(1) памяти)
 ├── house-robber-ii/                      # Ограбление домов в круге (1D DP)
+├── house-robber-iii/                     # Ограбление домов-узлов дерева (DP на дереве, пара состояний)
 ├── unique-paths/                         # Число путей в сетке (2D DP, мемоизация)
 ├── climbing-stairs/                      # Число способов подняться (Фибоначчи, O(1) памяти)
 ├── diameter-of-binary-tree/              # Диаметр дерева (post-order DFS)
